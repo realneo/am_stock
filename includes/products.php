@@ -9,6 +9,9 @@
         $q = mysql_query("SELECT * FROM `products` WHERE `company_id` = '$c_id'");
         while($row = mysql_fetch_array($q)){
            $name = $row['name'];
+           $quantity = $row['quantity'];
+           $unit = $row['unit'];
+           $category_id = $row['category_id'];
            $count++;
            $prod_id = $row['id'];
            echo"
