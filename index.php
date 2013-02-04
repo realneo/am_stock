@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="top_logo"><img src="liwale/images/amstockgreylogo.png" alt="" /></div><!-- top_logo -->
+			<div id="top_logo"><img src="images/amstockgreylogo.png" alt="" /></div><!-- top_logo -->
 			<div id="header_msg">Choose a Company</div><!-- header_msg -->
 			<div id="companies">
 				<a href="#" class="tile" id='liwale_btn'><img src="images/icons/liwale_icon_color.png" alt="Liwale" /> Liwale </a>
@@ -59,7 +59,7 @@
 			<div id='categories'>
 				<div class='tile_xp'>
 					<div class='tile_logo'><img src='images/icons/categories.png' alt='Categories' /></div><!-- tile_logo-->
-					<div class='tile_heading'> Categories </div><!-- tile_heading -->
+					<div class='tile_heading'>Categories </div><!-- tile_heading -->
 					<div class='tile_content'>
 						<div id="category_box">
 							<form name='category_form' id='category_form' method='post' action='includes/add_category_process.php'>
@@ -91,8 +91,8 @@
 								<input type='text' name='quantity' size='30' value='Enter Quantity'  id='product_quantity'/>
 								<br />
 								<select name='unit' id="product_unit">
-									<option value='1'>pcs</option>
-									<option value='2'>meters</option>
+									<option value='pcs'>pcs</option>
+									<option value='meters'>meters</option>
 								</select>
 								<br />
 								<button type='subimt' id='product_btn'>Add New Product</button>
@@ -146,9 +146,16 @@
 					</div><!-- tile_content -->
 				</div><!-- tile_xp -->
 			</div><!-- sold -->
-                    <div id="view_all_categories">
-                    
-                    </div><!-- view_all_categories -->
+                        <div id="inside_window">
+                            <div id="iw_top_bar">
+                                <div id="iw_title">Categories</div><!-- iw_title -->
+                            </div><!-- iw_top_bar -->
+                            <div id="iw_tile2"></div>
+                            <div id="iw_content">
+                                <div id="view_all_categories"></div><!-- view_all_categories -->
+                                <div id="view_all_products"></div><!-- view_all_products -->
+                            </div><!-- iw_content -->
+                </div><!-- inside_window -->
 		</div><!-- tile_xp_col -->
 		</div><!-- container -->
 	</body>
