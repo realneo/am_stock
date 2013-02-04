@@ -187,8 +187,60 @@ a:hover.main_links{
     font-size:16px;
 }
 #inside_window{
-    background-color: #04AEDA;
-    width:400px;
-    height:400px;
     position:absolute;
+    background-color: #04AEDA;
+    width:700px;
+    height:400px;
+    opacity:0.9;
+    filter:alpha(opacity=90); /* For IE8 and earlier */
+    color:#fff;
+    display:none;
+}
+#iw_top_bar{
+    position:absolute;
+    top:10px;
+    left:15px;
+    height:20px;
+    width:700px;
+}
+#iw_title{
+    font-size:20px;
+    font-weight: bold;
+}
+#iw_content{
+    height:360px;
+    overflow: auto;
+    margin-left:10px;
+    margin-top:40px;
+}
+#iw_tile2{
+    font-size:16px;
+}
+#iw_content table{
+    width:670px;
+}
+#iw_content td{
+    border-top:solid #fff thin;
+    padding:5px;
+    font-size:18px;
+}
+#iw_content th{
+    text-align: left;
+    font-size:20px;
+    color:#fff;
+    font-weight:lighter;
+}
+#inside_window a{
+    color:#fff;
+    cursor: pointer;
+}
+#iw_content tr:hover{
+    background:#6e6e6e;
+    color:#fff;
+}
+#view_all_categories{
+    display:none;
+}
+#view_all_products{
+    display: none;
 }
