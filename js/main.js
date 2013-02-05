@@ -261,6 +261,71 @@ $(document).ready(function(){
             $('#stock').delay(400).fadeOut(400);
             $('#products').delay(800).fadeOut(400);
             $('#categories').delay(1200).fadeOut(400);
-            $('#view_all_categories').load("includes/categories.php");
+            $('#inside_window').delay(400).fadeIn();
+            $('#view_all_products').fadeOut();
+            $('#view_all_categories').delay(500).fadeIn(500);
+            $('#iw_title').html('Categories');
+            $('#view_all_categories').load("includes/categories.php?c_id="+company_id);
         });
+        $('#view_all_products_btn').click(function(){
+            $('#sold').fadeOut(400);
+            $('#stock').delay(400).fadeOut(400);
+            $('#products').delay(400).fadeOut(400);
+            $('#categories').delay(400).fadeOut(400);
+            $('#inside_window').delay(400).fadeIn();
+            $('#view_all_categories').fadeOut();
+            $('#view_all_products').delay(500).fadeIn(500);
+            $("#iw_title").html('Products');
+            $('#view_all_products').load("includes/products.php?c_id="+company_id);
+        });        
+        // Deleting a category process
+         $(document).on('click', '.delete_cat_btn', function () {
+            var answer = confirm('Are you sure you want to Delete this Category?');
+            if(answer == true){
+                var form_action = 'includes/delete_category_process.php';
+                var form_data = {cat_id : $(this).attr('id')};     
+                $.ajax({
+                    type:'post',
+                    url:form_action,
+                    data:form_data,
+                    success:function(response){
+                        if(response == 'success'){
+                            $('#view_all_categories').fadeOut().load('includes/categories.php').fadeIn();
+                        }
+                    }
+                });
+            }else{
+                // Do Nothing
+            }
+            return false;
+        });
+        // Deleting a product process
+         $(document).on('click', '.delete_prod_btn', function () {
+            var answer = confirm('Are you sure you want to Delete this Product?');
+            if(answer == true){
+                var form_action = 'includes/delete_product_process.php';
+                var form_data = {prod_id : $(this).attr('id')};     
+                $.ajax({
+                    type:'post',
+                    url:form_action,
+                    data:form_data,
+                    success:function(response){
+                        if(response == 'success'){
+                            $('#view_all_products').fadeOut().load('includes/products.php').fadeIn();
+                        }
+                    }
+                });
+            }else{
+                // Do Nothing
+            }
+            return false;
+        });
+        // Small Icons
+        $('.small_icons').hover(function(){
+            $(this).animate({width:'60'});
+        },function(){
+            $(this).animate({width:'45'});
+        });
+        
+
 });
