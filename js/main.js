@@ -114,6 +114,9 @@ $(document).ready(function(){
 						$('.category_preloader').fadeOut();						
 						$('.category_feedback').fadeIn().html("<p class='success'>Successfully Added <b>"+form_data['name']+"</b></p>");	
                                                 $('.category_list').html("<option>Select Category</option>");
+                                                if(cat_pos == 1){
+                                                    $('#view_all_categories').fadeOut().load('includes/categories.php?c_id='+company_id).fadeIn();
+                                                }
                                                 category_hover_id = 0;
 					}else{
 						$('.category_feedback').fadeIn().html("<p class='error'>There was an Error adding <b>"+form_data['name']+"</b>!</p>");
@@ -252,6 +255,8 @@ $(document).ready(function(){
             $('#view_all_categories').delay(500).fadeIn(500);
             $('#iw_title').html('Categories');
             $('#view_all_categories').load("includes/categories.php?c_id="+company_id);
+            $('#categories').delay(1000).animate({paddingLeft:"700"}).fadeIn(400);
+            cat_pos = 1;
         });
         $('#view_all_products_btn').click(function(){
             $('#sold').fadeOut(400);
