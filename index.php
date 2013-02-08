@@ -27,10 +27,8 @@ session_start();
             <div id='side_bar'>
                 <div id="main_links">
                     <a href="#" class="main_links" id="view_all_categories_btn">Categories</a>
-                    <a href="#" class="main_links" id="add_category_btn">Add Category</a>
                     <hr />
                     <a href="#" class="main_links" id="view_all_products_btn">Products</a>
-                    <a href="#" class="main_links" id="add_product_btn">Add Product</a>
                     <hr />
                     <a href="#" class="main_links" id="add_stock_btn"">Add Stock </a>
                     <hr />
@@ -48,8 +46,8 @@ session_start();
                 </div><!-- footer -->
             </div><!-- side_bar -->
             <div id="small_icons">
-                <img src="images/icons/small_categories_icon.png" id="sm_categories_icon" class="small_icons" alt="Categories" />
-                <img src="images/icons/small_products_icon.png" id="sm_products_icon" class="small_icons" alt="Products" />
+                <img src="images/icons/small_products_icon.png" id="sm_categories_icon" class="small_icons" alt="Categories" />
+                <img src="images/icons/small_categories_icon.png" id="sm_products_icon" class="small_icons" alt="Products" />
                 <img src="images/icons/small_stock_icon.png" id="sm_stock_icon" class="small_icons" alt="Stock" />
                 <img src="images/icons/small_sold_icon.png" id="sm_sold_icon" class="small_icons" alt="Sold" />
                 <img src="images/icons/small_log_icon.png" id="sm_log_icon" class="small_icons" alt="Log" />
