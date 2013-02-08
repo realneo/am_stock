@@ -20,6 +20,8 @@ $(document).ready(function(){
 		$('.product_list').html("<option>Select a Product</option>");
 		$('.category_list').html("<option>Select Category</option>");
                 $('#companies img').fadeOut(400);
+                $('#main_links').fadeOut(400);
+                $('#small_icons').fadeOut(400);
 		// Getting text out of the Buttons
 		button_names = $(this).text();
 		$('#login_box h3').fadeOut(500, function() {
@@ -66,6 +68,7 @@ $(document).ready(function(){
 						$('#stock').delay(3500).fadeIn(400);
 						$('#sold').delay(4000).fadeIn(400);
                                                 $('#main_links').delay(4400).fadeIn(400);
+                                                $('#small_icons').delay(4800).fadeIn(400);
 					}else{
 						$('.feedback').fadeIn().html("<p class='error'>Either your Username or Password is incorrect</p>");
 						$('.login_preloader').fadeOut();
@@ -74,16 +77,6 @@ $(document).ready(function(){
 			});
 		return false;
 		};
-	});
-	// Logout Button
-	$('#sign_out').click(function(){
-		$.ajax({
-			url:"includes/logout_process.php",
-			success: function(response){
-				$('#container').fadeOut(1000)
-				setTimeout(function(){window.location.href = "index.php"}, 2000);
-			}
-		});
 	});
 	// Assigning Company ID
 	$('#liwale_btn').click(function(){
@@ -283,7 +276,7 @@ $(document).ready(function(){
                     data:form_data,
                     success:function(response){
                         if(response == 'success'){
-                            $('#view_all_categories').fadeOut().load('includes/categories.php').fadeIn();
+                            $('#view_all_categories').fadeOut().load('includes/categories.php?c_id='+company_id).fadeIn();
                         }
                     }
                 });
@@ -319,25 +312,17 @@ $(document).ready(function(){
         },function(){
             $(this).animate({width:'45'});
         });
-// 	// Back Button
-//	$('#back_btn').click(function(){
-//		$('#companies a').animate({'padding-top':'0px'});
-//		$('#companies a').animate({'background-color':'#6e6e6e'},200);	
-//		$('#side_bar').hide("slide",{direction: 'left'}, 1000);
-//		$('.tile_small').switchClass( "tile_small", "tile", 1000, "easeInOutQuad" );	
-//		$('#login_box').fadeOut(500);	
-//	});       
-        
         // Logout Process
         $('#logout_btn,#sm_logout_icon').click(function(){
             $('.feedback').fadeIn().html("<p class='success'>Succefully Logged Out</p>");
                 $('.feedback').fadeIn(400);
-                $('#login_box').delay(300).fadeIn(500);
-                $('#tile_xp_col').delay(500).fadeOut(500);
-                $('#categories').delay(700).fadeOut(400);
-                $('#products').delay(900).fadeOut(400);
-                $('#stock').delay(1100).fadeOut(400);
-                $('#sold').delay(1300).fadeOut(400);
-            
+                $('#tile_xp_col').fadeOut(2500);              
+                $('#sold').delay(400).fadeOut(400);
+                $('#stock').delay(800).fadeOut(400);
+                $('#products').delay(1200).fadeOut(400);
+                $('#categories').delay(1500).fadeOut(400);
+                $('#main_links').delay(1900).fadeOut(400);
+                $('#small_icons').delay(2300).fadeOut(400);
+                $('#login_box').delay(2700).fadeIn(500);
         });
 });
