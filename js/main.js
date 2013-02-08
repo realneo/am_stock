@@ -65,6 +65,7 @@ $(document).ready(function(){
 						$('#products').delay(3000).fadeIn(400);
 						$('#stock').delay(3500).fadeIn(400);
 						$('#sold').delay(4000).fadeIn(400);
+                                                $('#main_links').delay(4400).fadeIn(400);
 					}else{
 						$('.feedback').fadeIn().html("<p class='error'>Either your Username or Password is incorrect</p>");
 						$('.login_preloader').fadeOut();
