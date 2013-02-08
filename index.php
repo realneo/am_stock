@@ -25,7 +25,6 @@ session_start();
                 <a href="#" class="tile" id='stores_btn'><img src="images/icons/stores_icon_color.png" alt="Stores" /> Stores </a>
             </div><!-- companies -->
             <div id='side_bar'>
-                <a href="#" id='back_btn'>Back</a>
                 <div id="main_links">
                     <a href="#" class="main_links" id="view_all_categories_btn">Categories</a>
                     <a href="#" class="main_links" id="add_category_btn">Add Category</a>
@@ -40,9 +39,7 @@ session_start();
                     <a href="#" class="main_links" id="view_log_btn">Log</a>
                     <hr />
                     <a href="#" class="main_links" id="view_reports_btn">Report</a>
-                    <br />
-                    <br />
-                    <br />
+                    <hr />
                     <a href="#" class="main_links" id="logout_btn">Logout</a>
                 </div><!-- main_links -->
                 <div id="footer">
@@ -51,19 +48,13 @@ session_start();
                 </div><!-- footer -->
             </div><!-- side_bar -->
             <div id="small_icons">
-                <img src="images/icons/small_categories_icon.png" class="small_icons" alt="Categories" />
-                <br />
-                <img src="images/icons/small_products_icon.png" class="small_icons" alt="Products" />
-                <br />
-                <img src="images/icons/small_stock_icon.png" class="small_icons" alt="Stock" />
-                <br />
-                <img src="images/icons/small_sold_icon.png" class="small_icons" alt="Sold" />
-                <br />
-                <img src="images/icons/small_log_icon.png" class="small_icons" alt="Log" />
-                <br />
-                <img src="images/icons/small_report_icon.png" class="small_icons" alt="Report" />
-                <br />
-                <img src="images/icons/small_logout_icon.png" class="small_icons" alt="Logout" />
+                <img src="images/icons/small_categories_icon.png" id="sm_categories_icon" class="small_icons" alt="Categories" />
+                <img src="images/icons/small_products_icon.png" id="sm_products_icon" class="small_icons" alt="Products" />
+                <img src="images/icons/small_stock_icon.png" id="sm_stock_icon" class="small_icons" alt="Stock" />
+                <img src="images/icons/small_sold_icon.png" id="sm_sold_icon" class="small_icons" alt="Sold" />
+                <img src="images/icons/small_log_icon.png" id="sm_log_icon" class="small_icons" alt="Log" />
+                <img src="images/icons/small_report_icon.png" id="sm_reports_icon" class="small_icons" alt="Report" />
+                <img src="images/icons/small_logout_icon.png" id="sm_logout_icon" class="small_icons" alt="Logout" />
             </div><!-- small_icons -->
             <div id="login_box">
                 <h3> Company Name </h3>
