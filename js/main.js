@@ -268,7 +268,19 @@ $(document).ready(function(){
             $('#view_all_products').delay(500).fadeIn(500);
             $("#iw_title").html('Products');
             $('#view_all_products').load("includes/products.php?c_id="+company_id);
+            $('#products').delay(1000).animate({paddingLeft:"700"}).fadeIn(400);
         });        
+        $('#add_stock_btn').click(function(){
+            $('#sold').fadeOut(400);
+            $('#stock').delay(400).fadeOut(400);
+            $('#products').delay(400).fadeOut(400);
+            $('#categories').delay(400).fadeOut(400);
+            $('#inside_window').delay(400).fadeIn();
+            $('#view_all_categories').fadeOut();
+            $('#view_all_products').delay(500).fadeOut(500); 
+            $('#iw_title').html('Recently Added  Stock');
+            $('#stock').delay(1000).animate({paddingLeft:"700"}).fadeIn(400);
+        });
         // Deleting a category process
          $(document).on('click', '.delete_cat_btn', function () {
             var answer = confirm('Are you sure you want to Delete this Category?');
