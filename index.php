@@ -166,6 +166,7 @@ session_start();
                     <div id="iw_content">
                         <div id="view_all_categories"></div><!-- view_all_categories -->
                         <div id="view_all_products"></div><!-- view_all_products -->
+                        <div id="view_all_recent_added_stock"></div><!-- view_all_recent_added_stock -->
                     </div><!-- iw_content -->
                 </div><!-- inside_window -->
             </div><!-- tile_xp_col -->
