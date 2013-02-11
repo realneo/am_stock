@@ -32,7 +32,7 @@ session_start();
                     <hr />
                     <a href="#" class="main_links" id="add_stock_btn"">Add Stock </a>
                     <hr />
-                    <a href="#" class="main_links" id="sold_stock_btn"">Sold </a>
+                    <a href="#" class="main_links" id="sold_stock_btn"">Sold Stock</a>
                     <hr />
                     <a href="#" class="main_links" id="view_log_btn">Log</a>
                     <hr />
