@@ -256,6 +256,7 @@ $(document).ready(function(){
             $('#iw_title').html('Categories');
             $('#view_all_categories').load("includes/categories.php?c_id="+company_id);
             $('#categories').delay(1000).animate({paddingLeft:"700"}).fadeIn(400);
+            $('#view_all_recent_added_stock').fadeOut();
             cat_pos = 1;
         });
         $('#view_all_products_btn').click(function(){
@@ -269,12 +270,14 @@ $(document).ready(function(){
             $("#iw_title").html('Products');
             $('#view_all_products').load("includes/products.php?c_id="+company_id);
             $('#products').delay(1000).animate({paddingLeft:"700"}).fadeIn(400);
+            $('#view_all_recent_added_stock').fadeOut();
         });        
         $('#add_stock_btn').click(function(){
             $('#sold').fadeOut(400);
             $('#stock').delay(400).fadeOut(400);
             $('#products').delay(400).fadeOut(400);
             $('#categories').delay(400).fadeOut(400);
+            $('#view_all_recent_added_stock').load("includes/recent_added_stock.php?c_id="+company_id).fadeIn();
             $('#inside_window').delay(400).fadeIn();
             $('#view_all_categories').fadeOut();
             $('#view_all_products').delay(500).fadeOut(500); 
@@ -293,7 +296,7 @@ $(document).ready(function(){
                     data:form_data,
                     success:function(response){
                         if(response == 'success'){
-                            $('#view_all_categories').fadeOut().load('includes/categories.php?c_id='+company_id).fadeIn();
+                            $('#view_all_categories').fadeOut().load('includes/categories.php?c_id='+company_id).fadeIn();s
                         }
                     }
                 });
@@ -314,7 +317,7 @@ $(document).ready(function(){
                     data:form_data,
                     success:function(response){
                         if(response == 'success'){
-                            $('#view_all_products').fadeOut().load('includes/products.php').fadeIn();
+                            $('#view_all_products').fadeOut().load('includes/products.php'+company_id).fadeIn();
                         }
                     }
                 });
