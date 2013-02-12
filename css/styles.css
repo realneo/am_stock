@@ -171,9 +171,12 @@ html {
 	display: none;
 }
 #main_links{
-    margin-top:100px;
+    position:absolute;
+    top:70px;
+    left:0px;
+    width:250px;
     text-align: right;
-    padding-right:20px;
+    vertical-align: central;
     display:none;
 }
 .main_links{
@@ -182,7 +185,7 @@ html {
 }
 a.main_links{
     display:block;
-    padding:10px 5px;
+    padding:5px 5px;
 }
 a:hover.main_links{
     font-weight: bold;
@@ -246,21 +249,3 @@ a:hover.main_links{
 #view_all_products{
     display: none;
 }
-#small_icons{
-   position:absolute;
-   left:210px;
-   top:100px;
-   display:none;
-}
-#small_icons img{
-    display: block;
-    cursor: pointer;
-}
-#sm_categories_icon{padding-top:20px;}
-#sm_products_icon{padding-top:40px;}
-#sm_stock_icon{padding-top: 33px;}
-#sm_sold_icon{padding-top:13px;}
-#sm_log_icon{padding-top: 13px;}
-#sm_reports_icon{padding-top:13px;}
-#sm_logout_icon{padding-top: 13px;}
-#view_all_recent_added_stock{display:none;}
