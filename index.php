@@ -26,34 +26,19 @@ session_start();
             </div><!-- companies -->
             <div id='side_bar'>
                 <div id="main_links">
-                    <a href="#" class="main_links" id="view_all_categories_btn">Categories <img src="images/icons/small_products_icon.png" id="sm_categories_icon" class="small_icons" alt="Categories" /></a>
-                    <hr />
-                    <a href="#" class="main_links" id="view_all_products_btn">Products</a>
-                    <hr />
-                    <a href="#" class="main_links" id="add_stock_btn"">Add Stock </a>
-                    <hr />
-                    <a href="#" class="main_links" id="sold_stock_btn"">Sold Stock</a>
-                    <hr />
-                    <a href="#" class="main_links" id="view_log_btn">Log</a>
-                    <hr />
-                    <a href="#" class="main_links" id="view_reports_btn">Report</a>
-                    <hr />
-                    <a href="#" class="main_links" id="logout_btn">Logout</a>
+                    <a href="#" class="main_links" id="view_all_categories_btn">Categories<img src="images/icons/small_products_icon.png" id="sm_categories_icon" class="small_icons" alt="Categories" /></a>
+                    <a href="#" class="main_links" id="view_all_products_btn">Products <img src="images/icons/small_categories_icon.png" id="sm_products_icon" class="small_icons" alt="Products" /></a>
+                    <a href="#" class="main_links" id="add_stock_btn"">Add Stock <img src="images/icons/small_stock_icon.png" id="sm_stock_icon" class="small_icons" alt="Stock" /></a>
+                    <a href="#" class="main_links" id="sold_stock_btn"">Sold Stock <img src="images/icons/small_sold_icon.png" id="sm_sold_icon" class="small_icons" alt="Sold" /></a>
+                    <a href="#" class="main_links" id="view_log_btn">Log <img src="images/icons/small_log_icon.png" id="sm_log_icon" class="small_icons" alt="Log" /></a>
+                    <a href="#" class="main_links" id="view_reports_btn">Report <img src="images/icons/small_report_icon.png" id="sm_reports_icon" class="small_icons" alt="Report" /></a>
+                    <a href="#" class="main_links" id="logout_btn">Logout <img src="images/icons/small_logout_icon.png" id="sm_logout_icon" class="small_icons" alt="Logout" /></a>
                 </div><!-- main_links -->
                 <div id="footer">
                     <p align="center"> &copy; All Rights Reserved. <br />2012 AbdulMalik Stock. </p>
                     <p align="center"> Developed by <a href="http://www.yoteyote.com" alt=""> Yoteyote</a> </p>
                 </div><!-- footer -->
             </div><!-- side_bar -->
-            <div id="small_icons">
-                
-                <img src="images/icons/small_categories_icon.png" id="sm_products_icon" class="small_icons" alt="Products" />
-                <img src="images/icons/small_stock_icon.png" id="sm_stock_icon" class="small_icons" alt="Stock" />
-                <img src="images/icons/small_sold_icon.png" id="sm_sold_icon" class="small_icons" alt="Sold" />
-                <img src="images/icons/small_log_icon.png" id="sm_log_icon" class="small_icons" alt="Log" />
-                <img src="images/icons/small_report_icon.png" id="sm_reports_icon" class="small_icons" alt="Report" />
-                <img src="images/icons/small_logout_icon.png" id="sm_logout_icon" class="small_icons" alt="Logout" />
-            </div><!-- small_icons -->
             <div id="login_box">
                 <h3> Company Name </h3>
                 <p class='info'>Enter your username and password to enter the Admin area.</p>
